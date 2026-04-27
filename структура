@@ -1,20 +1,6 @@
-blog-app/
-├── package.json
-├── server.js
-├── .env
-├── models/
-│   ├── User.js
-│   ├── Post.js
-│   └── Comment.js
-├── routes/
-│   ├── auth.js
-│   ├── posts.js
-│   ├── comments.js
-│   └── subscribe.js
-├── middleware/
-│   └── auth.js
-└── public/
-    ├── index.html
-    ├── dashboard.html
-    ├── styles.css
-    └── script.js
+blog/
+├── index.html          # фронтенд (HTML, CSS, JS)
+├── api.php             # единый API на PHP
+├── config.php          # подключение к БД
+├── .htaccess           # (опционально) ЧПУ
+└── database.sql        # структура БД
