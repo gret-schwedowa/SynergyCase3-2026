@@ -1,0 +1,20 @@
+blog-app/
+├── package.json
+├── server.js
+├── .env
+├── models/
+│   ├── User.js
+│   ├── Post.js
+│   └── Comment.js
+├── routes/
+│   ├── auth.js
+│   ├── posts.js
+│   ├── comments.js
+│   └── subscribe.js
+├── middleware/
+│   └── auth.js
+└── public/
+    ├── index.html
+    ├── dashboard.html
+    ├── styles.css
+    └── script.js
