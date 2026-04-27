@@ -21,6 +21,16 @@ router.post('/', auth, async (req, res) => {
   }
 });
 
+// Получить посты текущего пользователя
+router.get('/my', auth, async (req, res) => {
+  try {
+    const posts = await Post.find({ author: req.user._id }).sort({ createdAt: -1 });
+    res.json(posts);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Получение постов для ленты (по подпискам)
 router.get('/feed', auth, async (req, res) => {
   try {
