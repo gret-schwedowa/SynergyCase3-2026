@@ -1,6 +1,0 @@
-blog/
-├── index.html          # фронтенд (HTML, CSS, JS)
-├── api.php             # единый API на PHP
-├── config.php          # подключение к БД
-├── .htaccess           # (опционально) ЧПУ
-└── database.sql        # структура БД
